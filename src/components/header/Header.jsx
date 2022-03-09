@@ -50,4 +50,8 @@ export default Header;
 
 const Flexbox = styled.div`
   display: flex;
+
+  @media (max-width: 922px) {
+    flex-direction: column;
+  }
 `;
