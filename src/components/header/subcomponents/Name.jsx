@@ -5,7 +5,7 @@ function Name() {
   return (
     <Container>
       <h5>Abp, Carmelo D.F Morelos Campus</h5>
-      <h1>GLEANERS</h1>
+      <h1>GLEANER</h1>
       <h3>The Student Publication of FSUU</h3>
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
 function Headline({ title, author, date }) {
@@ -10,16 +9,6 @@ function Headline({ title, author, date }) {
         <h1>{title}</h1>
         <h3>{author}</h3>
         <h5>{date}</h5>
-        <Popup
-          trigger={() => (
-            <StyledButton>
-              <h3>Read More</h3>
-            </StyledButton>
-          )}
-          modal
-        >
-          <span> Popup content </span>
-        </Popup>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +26,7 @@ function Headline({ title, author, date }) {
 
 export default Headline;
 
-const Article = styled.div`
+const Article = styled.button`
   background: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.5) 0%,
@@ -47,17 +36,32 @@ const Article = styled.div`
   height: 500px;
   width: 700px;
   color: #f1f7ed;
+  border: none;
+  text-align: left;
+
+  &:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+      ),
+      url(${'https://picsum.photos/500/700'});
+    cursor: pointer;
+  }
 
   svg {
     visibility: collapse;
   }
 
-  h1 {
-    margin-top: 15%;
+  h3,
+  h5 {
+    margin-left: 2%;
   }
 
   div {
-    margin-left: 5%;
+    margin-right: 50%;
+    margin-bottom: 50%;
+    white-space: nowrap;
   }
 
   @media (max-width: 922px) {
@@ -65,6 +69,10 @@ const Article = styled.div`
     width: 100%;
     height: 100%;
     text-align: center;
+
+    &:hover {
+      background-size: cover;
+    }
 
     svg {
       visibility: visible;
@@ -81,32 +89,8 @@ const Article = styled.div`
       font-size: 3.5rem;
     }
     div {
-      margin-left: 0%;
-      margin-bottom: 35%;
+      margin: 0;
+      white-space: normal;
     }
-  }
-`;
-
-const StyledButton = styled.button`
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  font-size: 1rem;
-  padding: 2% 2%;
-  border-color: #95adb6;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5%;
-  transition: background-color 100ms;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #95adb6;
-    color: #f1f7ed;
-  }
-
-  h3 {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    text-align: center;
   }
 `;
