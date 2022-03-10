@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from './Button';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
@@ -11,7 +10,14 @@ function Headline({ title, author, date }) {
         <h1>{title}</h1>
         <h3>{author}</h3>
         <h5>{date}</h5>
-        <Popup trigger={() => <Button />} modal>
+        <Popup
+          trigger={() => (
+            <StyledButton>
+              <h3>Read More</h3>
+            </StyledButton>
+          )}
+          modal
+        >
           <span> Popup content </span>
         </Popup>
       </div>
@@ -78,5 +84,29 @@ const Article = styled.div`
       margin-left: 0%;
       margin-bottom: 35%;
     }
+  }
+`;
+
+const StyledButton = styled.button`
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  font-size: 1rem;
+  padding: 2% 2%;
+  border-color: #95adb6;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5%;
+  transition: background-color 100ms;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #95adb6;
+    color: #f1f7ed;
+  }
+
+  h3 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-align: center;
   }
 `;
