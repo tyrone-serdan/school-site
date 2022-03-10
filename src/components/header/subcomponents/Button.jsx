@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Button() {
   return (
     <StyledButton>
-      <h3>Read Me</h3>
+      <h3>Read More</h3>
     </StyledButton>
   );
 }
