@@ -4,8 +4,9 @@ import styled from 'styled-components';
 function Name() {
   return (
     <Container>
-      <h3>The Student Publication of FSUU</h3>
+      <h5>Abp, Carmelo D.F Morelos Campus</h5>
       <h1>GLEANERS</h1>
+      <h3>The Student Publication of FSUU</h3>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="32"
@@ -42,11 +43,13 @@ const Container = styled.div`
   svg {
     visibility: collapse;
   }
-  
 
   @media (max-width: 922px) {
-    h1, h3 {
+    h1,
+    h3,
+    h5 {
       text-align: center;
+      white-space: normal;
     }
 
     svg {
@@ -56,7 +59,7 @@ const Container = styled.div`
       padding-bottom: 3%;
       display: block;
       margin: auto;
-      animation: animateDown infinite 1.5s;
+      animation: animateDown infinite 1.3s;
     }
   }
 `;
