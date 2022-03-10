@@ -1,26 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
 import 'reactjs-popup/dist/index.css';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 function Headline({ title, author, date }) {
   return (
-    <Article>
-      <div>
-        <h1>{title}</h1>
-        <h3>{author}</h3>
-        <h5>{date}</h5>
-      </div>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        fill="currentColor"
-        class="bi bi-arrow-down-circle-fill"
-        viewBox="0 0 16 16"
-      >
-        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
-      </svg>
-    </Article>
+    <Popup
+      trigger={
+        <Article>
+          <div>
+            <h1>{title}</h1>
+            <h3>{author}</h3>
+            <h5>{date}</h5>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentColor"
+            class="bi bi-arrow-down-circle-fill"
+            viewBox="0 0 16 16"
+          >
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
+          </svg>
+        </Article>
+      }
+      modal
+    >
+      <h1>popup content</h1>
+    </Popup>
   );
 }
 
