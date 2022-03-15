@@ -4,7 +4,7 @@ import 'reactjs-popup/dist/index.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
-function Headline({ title, author, date }) {
+function Headline({ title, author, content }) {
   return (
     <Popup
       trigger={
@@ -12,7 +12,6 @@ function Headline({ title, author, date }) {
           <div>
             <h1>{title}</h1>
             <h3>{author}</h3>
-            <h5>{date}</h5>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,8 +26,20 @@ function Headline({ title, author, date }) {
         </Article>
       }
       modal
+      lockScroll
     >
-      <h1>popup content</h1>
+      <div style={{ height: '100%' }}>
+        <div className="header">
+          <h1>{title}</h1>
+          <h3>{author}</h3>
+        </div>
+        <ContentPopup>
+          {content &&
+            content.map((paragraph) => {
+              return <p>{paragraph}</p>;
+            })}
+        </ContentPopup>
+      </div>
     </Popup>
   );
 }
@@ -41,9 +52,9 @@ const Article = styled.button`
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(${'https://picsum.photos/500/700'});
+    url(${'https://picsum.photos/500/600'});
   height: 500px;
-  width: 700px;
+  width: 600px;
   color: #f1f7ed;
   border: none;
   text-align: left;
@@ -54,7 +65,7 @@ const Article = styled.button`
         rgba(0, 0, 0, 0.7) 0%,
         rgba(0, 0, 0, 0.7) 100%
       ),
-      url(${'https://picsum.photos/500/700'});
+      url(${'https://picsum.photos/500/600'});
     cursor: pointer;
   }
 
@@ -68,9 +79,9 @@ const Article = styled.button`
   }
 
   div {
-    margin-right: 50%;
-    margin-bottom: 50%;
-    white-space: nowrap;
+    margin-top: 90%;
+    margin-bottom: 0%;
+    margin-right: 10%;
   }
 
   @media (max-width: 922px) {
@@ -102,4 +113,10 @@ const Article = styled.button`
       white-space: normal;
     }
   }
+`;
+
+const ContentPopup = styled.div`
+  width: 100%;
+  height: 500px;
+  overflow-y: scroll;
 `;

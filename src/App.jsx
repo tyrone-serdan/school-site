@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from './components/header/Header';
-import Carousel from './components/articles/Carousel';
+import Quote from './components/quotes/Quote';
 
 function App() {
   return (
     <div>
       <Header />
-      <Carousel />
+      <Quote />
     </div>
   );
 }

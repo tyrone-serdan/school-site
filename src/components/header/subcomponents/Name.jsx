@@ -4,9 +4,11 @@ import styled from 'styled-components';
 function Name() {
   return (
     <Container>
-      <h5>Abp, Carmelo D.F Morelos Campus</h5>
-      <h1>GLEANER</h1>
-      <h3>The Student Publication of FSUU</h3>
+      <Flexbox>
+        <h5>Abp, Carmelo D.F Morelos Campus</h5>
+          <h1>GLEANER</h1>
+          <h3>The Student Publication of FSUU</h3>
+      </Flexbox>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="32"
@@ -30,9 +32,16 @@ const Container = styled.div`
   background-color: #2b59c3;
   color: #f1f7ed;
   padding: 2%;
+  padding-right: 7%;
+
+  h1,
+  h3,
+  h5 {
+    margin: 0;
+  }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
   }
 
   h3 {
@@ -62,4 +71,12 @@ const Container = styled.div`
       animation: animateDown infinite 1.3s;
     }
   }
+`;
+
+const Flexbox = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
 `;

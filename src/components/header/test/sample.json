@@ -1,25 +1,30 @@
 [
     {
-        "authors": "Test author 1",
-        "content": "Test content 1 with bicycle",
-        "date_posted": "2022-03-08T23:59:44.186061",
-        "date_updated": "2022-03-09T00:10:41.608539",
+        "authors": "Haseena Alexa E. Montante",
+        "content": [
+            "To be isolated is not the way we were supposed to live our lives, especially when faced with difficulties. Being out independently as a teenager without fear of contracting a virus may benefit one's mental health, including one's sense of identity, self-esteem, and sense of belonging. Our days are not meant to be spent locked in our homes, growing longer and deeper with each passing moment as it adds to the weight of our sighs. As students, we are expected to connect with the world around us to pick up a few experiences and understanding. However, with the pandemic seething, we are unable to do much but wait and learn from our screens. All we can do is pray for the sparking hope to become a reality.",
+            "Tayong lahat sa mundo ay napilitang umayon sa online learning. Makalipas ang ilang buwan at bumalik na ito sa face-to-face class, ngunit sila lamang (foreign countries). Habang kami, mga Pilipino, ay napipilitang umayon pa rin sa online learning. ",
+            "In December 2019, the COVID-19 pandemic began. Many facets of society were significantly affected, and among those is the education sector. Gradually, the situation worsened, which pushed academic institutions to go on distant learning due to the global lockdown. As a result of these new adjustments, educational faculty, staff, and students are caught in a tight situation with limited options.",
+            "Fortunately for other countries, government leaders acted swiftly, ensuring that people took further health procedures at a higher level. As a product of their well-thought-out and prompt responses, students were able to physically return to their classrooms in just a few months. As for the Philippines, we have to endure another year of distant teaching and learning.",
+            "Tayo, hindi sila. Or if speaking globally: kami, hindi tayo. ",
+            "The Philippines began restricted face-to-face sessions on the 15th of November 2021, after nearly two years of school shut down due to the COVID-19 outbreak. President Rodrigo Duterte has given a go for a two-month pilot program in 100 public schools. Nevertheless, thirty private schools will begin restricted in-person sessions one week later, on the 22nd of November. The news sparked hope for students in the Philippines—students who have had their mental health decline due to the pressure and stress that distant learning has brought. Most can agree that students may find healthy education within the company of teachers and classmates.",
+            "Although many students wish to study in person, others believe that our country is not ready for this educational experience. School closures have had a wide range of adverse effects for students, including academic difficulties, mental distress, increased chance of dropping out, and child labor. To put it simply, we can benefit from a more personal, face-to-face education. But it's hard to believe that this mode of learning can take place again when our government appears to remain in disarray. We're falling further and further into the rabbit hole of falling behind, and now it is worse than ever. That is why it's somewhat nerve-wracking that we're reeling in a gamble for the sake of our education.",
+            "Even if the improvement is slow, progress is progress. However, the genuine concern is that while government officials promised that no student would be left behind, the Philippines itself is left behind.",
+            "Naghahanap tayo ng mga makakapagpabuti; mabilis silang umuusad, habang kami'y paparating lamang.",
+            "How long until the sparking hope turns into reality?"
+        ],
         "id": 1,
-        "title": "Test headline 1"
+        "title": "Kami, Tayo, Sila: Hope for Education in the Face of a Pandemic"
     },
     {
         "authors": "Test author 2",
         "content": "Test content 2",
-        "date_posted": "2022-03-09T00:10:00.428579",
-        "date_updated": "2022-03-09T00:10:00.428579",
         "id": 2,
         "title": "Test headline 2"
     },
     {
         "authors": "Test author 3",
         "content": "Test content 3",
-        "date_posted": "2022-04-09T00:12:32.428579",
-        "date_updated": "2022-04-09T00:12:32.428579",
         "id": 3,
         "title": "Test headline 3"
     }
