@@ -28,18 +28,16 @@ function Headline({ title, author, content }) {
       modal
       lockScroll
     >
-      <div style={{ height: '100%' }}>
-        <div className="header">
-          <h1>{title}</h1>
-          <h3>{author}</h3>
-        </div>
         <ContentPopup>
+          <div>
+            <h2>{title}</h2>
+            <h3>{author}</h3>
+          </div>
           {content &&
             content.map((paragraph) => {
               return <p>{paragraph}</p>;
             })}
         </ContentPopup>
-      </div>
     </Popup>
   );
 }
@@ -117,6 +115,15 @@ const Article = styled.button`
 
 const ContentPopup = styled.div`
   width: 100%;
-  height: 500px;
+  height: 700px;
   overflow-y: scroll;
+  text-align: justify;
+
+  @media (max-width: 922px) {
+    height: 500px;
+    text-align: justify;
+    div {
+      text-align: center;
+    }
+  }
 `;
