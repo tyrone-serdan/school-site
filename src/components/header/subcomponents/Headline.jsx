@@ -28,16 +28,18 @@ function Headline({ title, author, content }) {
       modal
       lockScroll
     >
-        <ContentPopup>
-          <div>
-            <h2>{title}</h2>
-            <h3>{author}</h3>
-          </div>
-          {content &&
-            content.map((paragraph) => {
-              return <p>{paragraph}</p>;
-            })}
-        </ContentPopup>
+      <ContentPopup>
+        <div>
+          <h1>{title}</h1>
+        </div>
+        {content &&
+          content.map((paragraph) => {
+            return <p>{paragraph}</p>;
+          })}
+        <div>
+          <h3>- {author}</h3>
+        </div>
+      </ContentPopup>
     </Popup>
   );
 }
@@ -119,11 +121,28 @@ const ContentPopup = styled.div`
   overflow-y: scroll;
   text-align: justify;
 
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  h3 {
+    margin-top: 7%;
+    text-align: right;
+  }
+
+  p,
+  div {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  p::first-letter {
+    margin-left: 5%;
+  }
+
   @media (max-width: 922px) {
     height: 500px;
     text-align: justify;
-    div {
-      text-align: center;
-    }
   }
 `;
