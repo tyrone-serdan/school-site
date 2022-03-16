@@ -29,7 +29,7 @@ function Name() {
 export default Name;
 
 const Container = styled.div`
-  background-color: #300c74;
+  background-color: #2A0E74;
   color: #f1f7ed;
   padding: 2%;
   padding-right: 3%;

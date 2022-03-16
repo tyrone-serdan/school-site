@@ -25,7 +25,6 @@ export default Articles;
 
 const Container = styled.div`
   display: flex;
-  margin-bottom: 3%;
 
   @media (max-width: 922px) {
     flex-direction: column;
