@@ -16,7 +16,7 @@ const Container = styled.div`
   height: 300px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(${'http://www.urios.edu.ph/images/2020/02/26/morelos_ground_kids.jpg'});
+  background-image: url(${'https://cdn.discordapp.com/attachments/897553246787342406/953701194583384084/morelos_ground_kids.jpg'});
   background-size: cover;
 `;
 
