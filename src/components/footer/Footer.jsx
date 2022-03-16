@@ -111,6 +111,11 @@ const CreditsFlex = styled.div`
   padding-top: 1.5%;
   padding-bottom: 1.5%;
 
+  div {
+      margin-left: 2%;
+      margin-right: 2%;
+  }
+
   h5,
   p {
     margin: 0%;
