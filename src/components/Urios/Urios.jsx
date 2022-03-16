@@ -21,6 +21,8 @@ const Container = styled.div`
 `;
 
 const BiggerContainer = styled.div`
+  border-top: 7px solid #2a0e74;
+  border-bottom: 7px solid #2a0e74;
   width: 100%;
   height: 100%;
   padding-top: 5%;
