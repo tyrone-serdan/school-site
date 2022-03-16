@@ -69,7 +69,7 @@ const CloseArticle = styled.button`
   padding: 14px 28px;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.225s;
 
   &:hover {
     background-color: black;

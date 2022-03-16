@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from './components/header/Header';
-import Quote from './components/quotes/Quote';
 import Articles from './components/articles/Articles';
+import Urios from './components/Urios/Urios';
 
 function App() {
   return (
     <div>
       <Header />
-      <Quote />
+      <Urios />
       <Articles />
     </div>
   );

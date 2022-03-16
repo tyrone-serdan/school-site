@@ -6,7 +6,6 @@ import 'reactjs-popup/dist/index.css';
 import PContent from '../../popup/PContent';
 
 function Headline({ title, author, content, url }) {
-
   return (
     <Popup
       trigger={
@@ -31,7 +30,12 @@ function Headline({ title, author, content, url }) {
       lockScroll
     >
       {(close) => (
-          <PContent title={title} author={author} content={content} close={close} />
+        <PContent
+          title={title}
+          author={author}
+          content={content}
+          close={close}
+        />
       )}
     </Popup>
   );
@@ -42,8 +46,8 @@ export default Headline;
 const Article = styled.button`
   background: linear-gradient(
       0deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%
     ),
     url(${(props) => props.bg});
   background-size: cover;
@@ -56,8 +60,8 @@ const Article = styled.button`
   &:hover {
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.7) 100%
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
       ),
       url(${(props) => props.bg});
     background-size: cover;
