@@ -1,0 +1,20 @@
+[
+    {
+        "authors": "Test author 1",
+        "content": "Test content 1 with bicycle",
+        "id": 1,
+        "title": "Test Blog 1"
+    },
+    {
+        "authors": "Test author 2",
+        "content": "Test content 2",
+        "id": 2,
+        "title": "Test Blog 2"
+    },
+    {
+        "authors": "Test author 3",
+        "content": "Test content 3",
+        "id": 2,
+        "title": "Test Blog 3"
+    }
+]

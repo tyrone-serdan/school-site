@@ -32,10 +32,7 @@ function Headline({ title, author, content }) {
         <div>
           <h1>{title}</h1>
         </div>
-        {content &&
-          content.map((paragraph) => {
-            return <p>{paragraph}</p>;
-          })}
+        {content}
         <div>
           <h3>- {author}</h3>
         </div>
