@@ -33,11 +33,12 @@ export default Article;
 const Container = styled.button`
   text-align: center;
   width: 100%;
-  height: 800px;
-  background: none;
+  height: 717px;
   border: none;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
     url(${(props) => props.bg});
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &:hover {
     cursor: pointer;
@@ -47,6 +48,8 @@ const Container = styled.button`
         rgba(0, 0, 0, 0) 100%
       ),
       url(${(props) => props.bg});
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   h1 {

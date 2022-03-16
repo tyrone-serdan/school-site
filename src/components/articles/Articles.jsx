@@ -11,7 +11,7 @@ function Articles() {
           <Article
             title={article.title}
             author={article.authors}
-            content={article.authors}
+            content={article.content}
             key={article.id + 10}
             url={article.url}
           />
