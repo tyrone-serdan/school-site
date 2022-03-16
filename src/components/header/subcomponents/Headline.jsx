@@ -3,13 +3,9 @@ import styled from 'styled-components';
 import 'reactjs-popup/dist/index.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import PContent from '../../popup/PContent';
 
 function Headline({ title, author, content, url }) {
-  function createContent(article) {
-    return { __html: `${article}` };
-  };
-
-  const HTMLContent = createContent(content);
 
   return (
     <Popup
@@ -35,18 +31,7 @@ function Headline({ title, author, content, url }) {
       lockScroll
     >
       {(close) => (
-        <ContentPopup>
-          <div>
-            <h1>{title}</h1>
-            <CloseContainer>
-              <CloseArticle onClick={close}>Close Article</CloseArticle>
-            </CloseContainer>
-          </div>
-          <div dangerouslySetInnerHTML={HTMLContent} style={{ margin: '0' }} />
-          <div>
-            <h3>- {author}</h3>
-          </div>
-        </ContentPopup>
+          <PContent title={title} author={author} content={content} close={close} />
       )}
     </Popup>
   );
@@ -122,59 +107,5 @@ const Article = styled.button`
       margin: 0;
       white-space: normal;
     }
-  }
-`;
-
-const ContentPopup = styled.div`
-  width: 100%;
-  height: 700px;
-  overflow-y: scroll;
-  text-align: justify;
-
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-  }
-
-  h3 {
-    margin-top: 7%;
-    text-align: right;
-  }
-
-  p,
-  div {
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-
-  p::first-letter {
-    margin-left: 5%;
-  }
-
-  @media (max-width: 922px) {
-    height: 500px;
-    text-align: justify;
-  }
-`;
-
-const CloseContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-const CloseArticle = styled.button`
-  border: 2px solid black;
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 5px;
-  color: black;
-  padding: 14px 28px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s;
-
-  &:hover {
-    background-color: black;
-    color: white;
   }
 `;
