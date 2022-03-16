@@ -56,6 +56,7 @@ const Article = styled.button`
   color: #f1f7ed;
   border: none;
   text-align: left;
+  background-color: black;
 
   &:hover {
     background: linear-gradient(
@@ -65,6 +66,7 @@ const Article = styled.button`
       ),
       url(${(props) => props.bg});
     background-size: cover;
+    background-color: black;
     cursor: pointer;
   }
 
