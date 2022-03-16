@@ -7,7 +7,7 @@ import 'reactjs-popup/dist/index.css';
 function Headline({ title, author, content, url }) {
   function createContent(article) {
     return { __html: `${article}` };
-  }
+  };
 
   const HTMLContent = createContent(content);
 
@@ -34,15 +34,20 @@ function Headline({ title, author, content, url }) {
       modal
       lockScroll
     >
-      <ContentPopup>
-        <div>
-          <h1>{title}</h1>
-        </div>
-        <div dangerouslySetInnerHTML={HTMLContent} style={{ margin: '0' }} />
-        <div>
-          <h3>- {author}</h3>
-        </div>
-      </ContentPopup>
+      {(close) => (
+        <ContentPopup>
+          <div>
+            <h1>{title}</h1>
+            <CloseContainer>
+              <CloseArticle onClick={close}>Close Article</CloseArticle>
+            </CloseContainer>
+          </div>
+          <div dangerouslySetInnerHTML={HTMLContent} style={{ margin: '0' }} />
+          <div>
+            <h3>- {author}</h3>
+          </div>
+        </ContentPopup>
+      )}
     </Popup>
   );
 }
@@ -149,5 +154,27 @@ const ContentPopup = styled.div`
   @media (max-width: 922px) {
     height: 500px;
     text-align: justify;
+  }
+`;
+
+const CloseContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const CloseArticle = styled.button`
+  border: 2px solid black;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  color: black;
+  padding: 14px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: black;
+    color: white;
   }
 `;

@@ -30,4 +30,12 @@ const Container = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  h1 {
+    color: #089444;
+  }
+
+  h3 {
+    color: #300c74;
+  }
 `;

@@ -15,8 +15,10 @@ export default Articles;
 
 const Container = styled.div`
   display: flex;
+  margin-bottom: 10%;
 
   @media (max-width: 922px) {
     flex-direction: column;
+    margin-bottom: 0%;
   }
 `;

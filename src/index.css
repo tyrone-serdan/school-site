@@ -25,3 +25,11 @@ code {
     transform: translateY(3px)
   }
 }
+
+.popup-content {
+  width: 800px !important;
+
+  @media (max-height: 568px) {
+    height: 300px !important;
+  }
+}
