@@ -4,11 +4,17 @@ import 'reactjs-popup/dist/index.css';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
-function Headline({ title, author, content }) {
+function Headline({ title, author, content, url }) {
+  function createContent(article) {
+    return { __html: `${article}` };
+  }
+
+  const HTMLContent = createContent(content);
+
   return (
     <Popup
       trigger={
-        <Article>
+        <Article bg={url}>
           <div>
             <h1>{title}</h1>
             <h3>{author}</h3>
@@ -32,7 +38,7 @@ function Headline({ title, author, content }) {
         <div>
           <h1>{title}</h1>
         </div>
-        {content}
+        <div dangerouslySetInnerHTML={HTMLContent} style={{ margin: '0' }} />
         <div>
           <h3>- {author}</h3>
         </div>
@@ -49,7 +55,8 @@ const Article = styled.button`
       rgba(0, 0, 0, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
     ),
-    url(${'https://picsum.photos/500/600'});
+    url(${(props) => props.bg});
+  background-size: cover;
   height: 500px;
   width: 600px;
   color: #f1f7ed;
@@ -62,7 +69,8 @@ const Article = styled.button`
         rgba(0, 0, 0, 0.7) 0%,
         rgba(0, 0, 0, 0.7) 100%
       ),
-      url(${'https://picsum.photos/500/600'});
+      url(${(props) => props.bg});
+    background-size: cover;
     cursor: pointer;
   }
 

@@ -8,10 +8,9 @@ function Article() {
     <Popup
       trigger={
         <Container>
-        <h1>TITLE HEADER</h1>
-        <h3>AUTHOR</h3>
-        <h5>DATE</h5>
-      </Container>
+          <h1>TITLE HEADER</h1>
+          <h3>AUTHOR</h3>
+        </Container>
       }
       modal
     >

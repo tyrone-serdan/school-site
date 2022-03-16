@@ -32,7 +32,7 @@ const Container = styled.div`
   background-color: #2b59c3;
   color: #f1f7ed;
   padding: 2%;
-  padding-right: 7%;
+  padding-right: 3%;
 
   h1,
   h3,
@@ -54,6 +54,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 922px) {
+    padding-right: 0%;
     h1,
     h3,
     h5 {
