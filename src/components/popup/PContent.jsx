@@ -28,6 +28,7 @@ const ContentPopup = styled.div`
   height: 700px;
   overflow-y: scroll;
   text-align: justify;
+  background-color: #f1f7ed;
 
   h1 {
     text-align: center;
