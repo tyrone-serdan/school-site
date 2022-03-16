@@ -5,7 +5,7 @@ function Footer() {
   return (
     <Container>
       <SVGContainer>
-        <SVGButton href="https://www.google.com/">
+        <SVGButton href="https://www.facebook.com/fsuugleaner">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -29,8 +29,45 @@ function Footer() {
             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
           </svg>
         </SVGButton>
-        <h3>GLEANER</h3>
       </SVGContainer>
+      <CreditsContainer>
+        <h3>Gleaner Staff</h3>
+        <CreditsFlex>
+          <div>
+            <h5>Erika Bianca Sanchez</h5>
+            <p>Editor in Chief</p>
+          </div>
+          <div>
+            <h5>Haseena Alexa E. Montante</h5>
+            <p>Associate Editor</p>
+          </div>
+          <div>
+            <h5>Anthony Carl Jose O. Asuncion</h5>
+            <p>Layout Artist</p>
+          </div>
+          <div>
+            <h5>Ianne E. Gencianeo</h5>
+            <p>Contributor</p>
+          </div>
+          <div>
+            <h5>Dennis Clyde B. Castilla</h5>
+            <p>Contributor</p>
+          </div>
+          <div>
+            <h5>Jonas Rusiana</h5>
+            <h5>Tyrone Gabriel B. Serdan</h5>
+            <p>Web Designer</p>
+          </div>
+          <div>
+            <h5>Claudine Adrales</h5>
+            <p>School Paper Adviser</p>
+          </div>
+          <div>
+            <h5>Ma. Lourdes Bernadette V. Sanchez</h5>
+            <p>Principal</p>
+          </div>
+        </CreditsFlex>
+      </CreditsContainer>
     </Container>
   );
 }
@@ -58,5 +95,32 @@ const SVGButton = styled.a`
 
 const SVGContainer = styled.div`
   padding-top: 1%;
-  padding-bottom: 1%;
+  margin-top: 3%;
+`;
+
+const CreditsContainer = styled.div`
+  text-align: center;
+`;
+
+const CreditsFlex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5%;
+  padding-bottom: 1.5%;
+
+  h5,
+  p {
+    margin: 0%;
+  }
+
+  @media (max-width: 922px) {
+    flex-direction: column;
+
+    div {
+        margin-bottom: 3%;
+    }
+  }
 `;

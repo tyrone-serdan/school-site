@@ -6,16 +6,29 @@ import articles from '../../content/articles.json';
 function Articles() {
   return (
     <Container>
-      {articles.map((article) => {
-        return (
-          <Article
-            title={article.title}
-            author={article.authors}
-            content={article.content}
-            key={article.id + 10}
-            url={article.url}
-          />
-        );
+      {articles.map((article, index) => {
+        if (index === 0) {
+          return (
+            <Article
+              title={article.title}
+              author={article.authors}
+              content={article.content}
+              key={article.id + 10}
+              url={article.url}
+              showArrow
+            />
+          );
+        } else {
+          return (
+            <Article
+              title={article.title}
+              author={article.authors}
+              content={article.content}
+              key={article.id + 10}
+              url={article.url}
+            />
+          );
+        }
       })}
     </Container>
   );
