@@ -33,30 +33,27 @@ export default Article;
 const Container = styled.button`
   text-align: center;
   width: 100%;
+  height: 800px;
   background: none;
   border: none;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.5) 0%,
-      rgba(0, 0, 0, 0.5) 100%
-    ),
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
     url(${(props) => props.bg});
 
   &:hover {
     cursor: pointer;
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.3) 100%
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 100%
       ),
       url(${(props) => props.bg});
   }
 
   h1 {
-    color: #089444;
+    color: #f1f7ed;
   }
 
   h3 {
-    color: #300c74;
+    color: #f1f7ed;
   }
 `;
