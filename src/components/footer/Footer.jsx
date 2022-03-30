@@ -60,7 +60,11 @@ function Footer() {
           </div>
           <div>
             <h5>Claudine Adrales</h5>
-            <p>School Paper Adviser</p>
+            <p>Adviser (HS)</p>
+          </div>
+          <div>
+            <h5>Flordeliz Villaluz</h5>
+            <p>Adviser (GS)</p>
           </div>
           <div>
             <h5>Ma. Lourdes Bernadette V. Sanchez</h5>
