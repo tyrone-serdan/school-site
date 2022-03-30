@@ -5,9 +5,9 @@ function Name() {
   return (
     <Container>
       <Flexbox>
-        <h5>Abp, Carmelo D.F Morelos Campus</h5>
+        <h5>Abp Carmelo D.F Morelos Campus</h5>
           <h1>GLEANER</h1>
-          <h3>The Student Publication of FSUU</h3>
+          <h3>The Student Publication of Father Saturnino Urios University</h3>
       </Flexbox>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,6 @@ const Container = styled.div`
 
   h3 {
     font-size: 1.5rem;
-    white-space: nowrap;
   }
 
   svg {
