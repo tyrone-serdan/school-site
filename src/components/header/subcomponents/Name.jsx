@@ -5,7 +5,7 @@ function Name() {
   return (
     <Container>
       <Flexbox>
-        <h5>Abp Carmelo D.F Morelos Campus</h5>
+        <h5>Abp. Carmelo D.F Morelos Campus</h5>
           <h1>GLEANER</h1>
           <h3>The Student Publication of Father Saturnino Urios University</h3>
       </Flexbox>
