@@ -27,6 +27,7 @@ function Header() {
               content={article.content}
               key={article.id}
               url={article.url}
+              photoCredits={article.photoCredits}
             />
           );
       })}

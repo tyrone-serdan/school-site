@@ -5,7 +5,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import PContent from '../../popup/PContent';
 
-function Headline({ title, author, content, url }) {
+function Headline({ title, author, content, url, photoCredits }) {
   return (
     <Popup
       trigger={
@@ -13,6 +13,7 @@ function Headline({ title, author, content, url }) {
           <div>
             <h1>{title}</h1>
             <h3>{author}</h3>
+            <h5>{photoCredits}</h5>
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
